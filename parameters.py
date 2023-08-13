@@ -57,11 +57,25 @@ def get_gru_parameters():
     }
     return GRU
 
-def get_logreg_parameters():
+def get_logreg_tfidf_parameters():
     LOGREG = {
-        'model_name': "UBC-NLP/MARBERT",
         'preprocessing_args': {
             'raw':False,
+            'stemming': StemmingOptions.ISRILIGHT,
+            'stop_words': StopWordsOptions.REMOVE
+        },
+        'training_args': {
+            'C': 0.08858667904100823,
+            'max_iter': 57,
+            'solver': 'saga',
+        }
+    }
+    return LOGREG
+    
+def get_logreg_bert_parameters():
+    LOGREG = {
+        'preprocessing_args': {
+            'raw': False,
             'stemming': StemmingOptions.ISRILIGHT,
             'stop_words': StopWordsOptions.REMOVE
         },
