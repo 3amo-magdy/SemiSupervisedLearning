@@ -35,6 +35,28 @@ def get_marbert_parameters():
     }
     return MARBERT
 
+# do not delete this comment
+
+# def get_gru_parameters():
+#     GRU = {
+#         'model_name': None,
+#         'preprocessing_args': {
+#             'raw': False,
+#             'stemming': StemmingOptions.ISRILIGHT ,
+#             'stop_words': StopWordsOptions.KEEP
+#         },
+#         'training_args': {
+#             'EPOCHS': 2,
+#             'BATCH_SIZE': 96,
+#             'emb_dim': 128,  
+#             'dropout': 0.15798235844548061,
+#             'learning_rate': 0.002 , 
+#             'bi_units': 160, 
+#             'uni_units': 39,
+#             'dense_units':42     
+#         },
+#     }
+#     return GRU
 
 def get_gru_parameters():
     GRU = {
@@ -45,14 +67,17 @@ def get_gru_parameters():
             'stop_words': StopWordsOptions.KEEP
         },
         'training_args': {
-            'EPOCHS': 2,
-            'BATCH_SIZE': 96,
-            'emb_dim': 128,  
-            'dropout': 0.15798235844548061,
-            'learning_rate': 0.002 , 
+            'EPOCHS': 16,
+            'BATCH_SIZE': 224,
+            'emb_dim': 137,  
+            'dropout': 0.2767830,
+            'learning_rate': 0.01, 
+            'bi_bool': True,
+            'uni_layers': 2,
             'bi_units': 160, 
-            'uni_units': 39,
-            'dense_units':42     
+            'uni_units': 96,
+            'final_layer_units': 41,
+            'dense_units':39     
         },
     }
     return GRU
