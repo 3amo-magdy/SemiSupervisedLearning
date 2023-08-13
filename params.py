@@ -9,3 +9,16 @@ class StemmingOptions(Enum):
 class StopWordsOptions(Enum):
     KEEP = auto()
     REMOVE = auto()
+
+GRU = {
+
+
+}
+LR_TFIDF= {
+    
+}
+
+MARBERT = {
+
+    
+}
