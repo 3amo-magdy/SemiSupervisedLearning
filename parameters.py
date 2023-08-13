@@ -55,7 +55,7 @@ def get_gru_parameters():
             'dense_units':42     
         },
     }
-    return MARBERT
+    return GRU
 
 def get_logreg_parameters():
     LOGREG = {
@@ -71,4 +71,4 @@ def get_logreg_parameters():
             'solver': 'saga',
         }
     }
-    return MARBERT
+    return LOGREG
