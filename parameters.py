@@ -13,7 +13,7 @@ class StopWordsOptions(Enum):
 
 MARBERT = {
     'preprocessing_args':{
-        'stemming': StemmingOptions.NONE
+        'stemming': StemmingOptions.NONE,
         'stop_words': StopWordsOptions.KEEP
     }
     'training_args': {
