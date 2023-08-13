@@ -15,7 +15,8 @@ MARBERT = {
     'preprocessing_args':{
         'stemming': StemmingOptions.NONE,
         'stop_words': StopWordsOptions.KEEP
-    }
+    },
+    
     'training_args': {
         'do_train': True,
         'evaluate_during_training': True,
@@ -29,5 +30,25 @@ MARBERT = {
         'save_steps': 400,
         'seed': 42,
         'report_to': "",
-    }
+    },
+}
+
+GRU = {
+    'preprocessing_args':{
+        'stemming': StemmingOptions.NONE,
+        'stop_words': StopWordsOptions.REMOVE
+    },
+    'training_args': {
+        
+    },
+}
+
+LR_TFIDF = {
+    'preprocessing_args':{
+        'stemming': StemmingOptions.NONE,
+        'stop_words': StopWordsOptions.REMOVE
+    },
+    'training_args': {
+        
+    },
 }
