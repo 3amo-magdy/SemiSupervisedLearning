@@ -10,45 +10,25 @@ class StopWordsOptions(Enum):
     KEEP = auto()
     REMOVE = auto()
 
-
-MARBERT = {
-    'preprocessing_args':{
-        'stemming': StemmingOptions.NONE,
-        'stop_words': StopWordsOptions.KEEP
-    },
-    
-    'training_args': {
-        'do_train': True,
-        'evaluate_during_training': True,
-        'adam_epsilon': 1e-8,
-        'learning_rate': 2e-5,
-        'warmup_steps': 0,
-        'per_device_train_batch_size': 16,
-        'per_device_eval_batch_size': 16,
-        'num_train_epochs': 1,
-        'logging_steps': 50,
-        'save_steps': 400,
-        'seed': 42,
-        'report_to': "",
-    },
-}
-
-GRU = {
-    'preprocessing_args':{
-        'stemming': StemmingOptions.NONE,
-        'stop_words': StopWordsOptions.REMOVE
-    },
-    'training_args': {
-        
-    },
-}
-
-LR_TFIDF = {
-    'preprocessing_args':{
-        'stemming': StemmingOptions.NONE,
-        'stop_words': StopWordsOptions.REMOVE
-    },
-    'training_args': {
-        
-    },
-}
+def get_marbert_parameters():
+    MARBERT = {
+        'preprocessing_args': {
+            'stemming': StemmingOptions.NONE,
+            'stop_words': StopWordsOptions.KEEP
+        },
+        'training_args': {
+            'do_train': True,
+            'evaluate_during_training': True,
+            'adam_epsilon': 1e-8,
+            'learning_rate': 2e-5,
+            'warmup_steps': 0,
+            'per_device_train_batch_size': 16,
+            'per_device_eval_batch_size': 16,
+            'num_train_epochs': 1,
+            'logging_steps': 50,
+            'save_steps': 400,
+            'seed': 42,
+            'report_to': "",
+        },
+    }
+    return MARBERT
