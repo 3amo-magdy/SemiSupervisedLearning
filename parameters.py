@@ -1,14 +1,14 @@
 from enum import Enum, auto
 
 class StemmingOptions(Enum):
-    NONE = auto()
-    ISRILIGHT = auto()
-    ISRI = auto()
-    ARABICLIGHT = auto()
+    NONE = 0
+    ISRILIGHT = 1
+    ISRI = 2
+    ARABICLIGHT = 3
 
 class StopWordsOptions(Enum):
-    KEEP = auto()
-    REMOVE = auto()
+    KEEP = 0
+    REMOVE = 1
 
 def get_marbert_parameters():
     MARBERT = {
