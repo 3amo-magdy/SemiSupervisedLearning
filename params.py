@@ -20,8 +20,7 @@ class StopWordsOptions(Enum):
 
 MARBERT = {
     training_args:{
-       do_train: True,
-       evaluate_during_training: True,
+       do_train: True, evaluate_during_training: True,
        adam_epsilon: 1e-8,
        learning_rate: 2e-5,
        warmup_steps: 0,
