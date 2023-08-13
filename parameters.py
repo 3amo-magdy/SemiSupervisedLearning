@@ -74,6 +74,7 @@ def get_logreg_tfidf_parameters():
     
 def get_logreg_bert_parameters():
     LOGREG = {
+        'model_name': "aubmindlab/bert-base-arabertv01",
         'preprocessing_args': {
             'raw': False,
             'stemming': StemmingOptions.ISRILIGHT,
