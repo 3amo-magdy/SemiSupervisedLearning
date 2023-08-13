@@ -12,6 +12,7 @@ class StopWordsOptions(Enum):
 
 def get_marbert_parameters():
     MARBERT = {
+        'model_name': "UBC-NLP/MARBERT",
         'preprocessing_args': {
             'stemming': StemmingOptions.NONE,
             'stop_words': StopWordsOptions.KEEP
