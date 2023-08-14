@@ -58,6 +58,49 @@ def get_marbert_parameters():
 #     }
 #     return GRU
 
+# FIRST 
+# =====================
+# 'EPOCHS': 38,
+# 'BATCH_SIZE': 96,
+# 'emb_dim': 320,  
+# 'dropout': 0.6164959,
+# 'learning_rate': 0.003007, 
+# 'bi_bool': True,
+# 'uni_layers': 1,
+# 'bi_units': 72, 
+# 'uni_units': 104,
+# 'final_layer_units': 11,
+# 'dense_units':60    
+
+#  SECOND 
+# =====================
+# 'EPOCHS': 20,
+# 'BATCH_SIZE': 96,
+# 'emb_dim': 460,  
+# 'dropout':  0.1579824,
+# 'learning_rate':0.01, 
+# 'bi_bool': True,
+# 'uni_layers': 0,
+# 'bi_units': 160, 
+# 'uni_units': 10,
+# 'final_layer_units': 39,
+# 'dense_units':42    
+
+#  THIRD 
+# =====================
+# 'EPOCHS': 16,
+# 'BATCH_SIZE': 96,
+# 'emb_dim': 137,  
+# 'dropout':  0.2767830,
+# 'learning_rate':0.01, 
+# 'bi_bool': True,
+# 'uni_layers': 2,
+# 'bi_units': 160, 
+# 'uni_units': 96,
+# 'final_layer_units': 41,
+# 'dense_units':39    
+
+
 def get_gru_parameters():
     GRU = {
         'model_name': None,
@@ -67,17 +110,17 @@ def get_gru_parameters():
             'stop_words': StopWordsOptions.KEEP
         },
         'training_args': {
-            'EPOCHS': 38,
+            'EPOCHS': 16,
             'BATCH_SIZE': 96,
-            'emb_dim': 320,  
-            'dropout': 0.6164959,
-            'learning_rate': 0.003007, 
+            'emb_dim': 137,  
+            'dropout':  0.2767830,
+            'learning_rate':0.01, 
             'bi_bool': True,
-            'uni_layers': 1,
-            'bi_units': 72, 
-            'uni_units': 104,
-            'final_layer_units': 11,
-            'dense_units':60     
+            'uni_layers': 2,
+            'bi_units': 160, 
+            'uni_units': 96,
+            'final_layer_units': 41,
+            'dense_units':39  
         },
     }
     return GRU
