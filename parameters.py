@@ -110,17 +110,17 @@ def get_gru_parameters():
             'stop_words': StopWordsOptions.KEEP
         },
         'training_args': {
-            'EPOCHS': 16,
+            'EPOCHS': 38,
             'BATCH_SIZE': 64,
-            'emb_dim': 137,  
-            'dropout':  0.2767830,
-            'learning_rate':0.01, 
+            'emb_dim': 320,  
+            'dropout': 0.6164959,
+            'learning_rate': 0.003007, 
             'bi_bool': True,
-            'uni_layers': 2,
-            'bi_units': 160, 
-            'uni_units': 96,
-            'final_layer_units': 41,
-            'dense_units':39  
+            'uni_layers': 1,
+            'bi_units': 72, 
+            'uni_units': 104,
+            'final_layer_units': 11,
+            'dense_units':60     
         },
     }
     return GRU
