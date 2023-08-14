@@ -111,7 +111,7 @@ def get_gru_parameters():
         },
         'training_args': {
             'EPOCHS': 16,
-            'BATCH_SIZE': 96,
+            'BATCH_SIZE': 64,
             'emb_dim': 137,  
             'dropout':  0.2767830,
             'learning_rate':0.01, 
