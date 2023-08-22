@@ -30,7 +30,7 @@ def get_marbert_parameters():
             'logging_steps': 50,
             'save_steps': 400,
             'seed': 42,
-            'report_to': "",
+            'report_to': None,
         },
     }
     return MARBERT
