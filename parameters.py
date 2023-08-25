@@ -107,7 +107,7 @@ def get_gru_parameters():
         'preprocessing_args': {
             'raw': False,
             'stemming': StemmingOptions.ISRILIGHT,
-            'stop_words': StopWordsOptions.KEEP
+            'stop_words': StopWordsOptions.REMOVE
         },
         'training_args': {
             'EPOCHS': 38,
