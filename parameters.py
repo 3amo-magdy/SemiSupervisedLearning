@@ -36,28 +36,6 @@ def get_marbert_parameters():
     }
     return MARBERT
 
-# do not delete this comment
-
-# def get_gru_parameters():
-#     GRU = {
-#         'model_name': None,
-#         'preprocessing_args': {
-#             'raw': False,
-#             'stemming': StemmingOptions.ISRILIGHT ,
-#             'stop_words': StopWordsOptions.KEEP
-#         },
-#         'training_args': {
-#             'EPOCHS': 2,
-#             'BATCH_SIZE': 96,
-#             'emb_dim': 128,  
-#             'dropout': 0.15798235844548061,
-#             'learning_rate': 0.002 , 
-#             'bi_units': 160, 
-#             'uni_units': 39,
-#             'dense_units':42     
-#         },
-#     }
-#     return GRU
 
 # FIRST 
 # =====================
