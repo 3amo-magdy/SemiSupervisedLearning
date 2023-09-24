@@ -112,8 +112,9 @@ def get_logreg_tfidf_parameters():
             'stop_words': StopWordsOptions.REMOVE
         },
         'training_args': {
-            'C': 0.08858667904100823,
-            'max_iter': 57,
+            'C': 1.223,
+            'max_iter': 50,
+            'penalty':'L2',
             'solver': 'saga',
         }
     }
