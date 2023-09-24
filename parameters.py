@@ -114,7 +114,7 @@ def get_logreg_tfidf_parameters():
         'training_args': {
             'C': 1.223,
             'max_iter': 50,
-            'penalty':'L2',
+            'penalty':'l2',
             'solver': 'saga',
         }
     }
@@ -131,7 +131,7 @@ def get_logreg_bert_parameters():
         'training_args': {
             'C': 1.223,
             'max_iter': 50,
-            'penalty':'L2',
+            'penalty':'l2',
             'solver': 'saga',
         }
     }
